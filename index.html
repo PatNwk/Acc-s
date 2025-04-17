@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Montre Connectée - SmartWatch 2025</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>SmartWatch 2025 - La montre connectée du futur</h1>
+        <nav>
+            <ul>
+                <li><a href="#produit">Le produit</a></li>
+                <li><a href="#video">Vidéo</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Section produit -->
+    <section id="produit">
+        <h2>Découvrez la SmartWatch 2025</h2>
+        <p>La SmartWatch 2025 est une montre intelligente de dernière génération, équipée de capteurs avancés et d'une interface intuitive. Restez connecté à votre santé, vos notifications et vos applications préférées, tout en profitant d'une autonomie exceptionnelle.</p>
+        <img src="montre.webp" alt="SmartWatch 2025 vue de près" width="600" height="400">
+    </section>
+
+    <!-- Section vidéo -->
+    <section id="video">
+        <h2>Présentation vidéo de la SmartWatch 2025</h2>
+        <video controls>
+            <source src="Vidéo_MPEG-4.mp4" type="video/mp4">
+            <track src="sous-titre.vtt" kind="subtitles" srclang="fr" label="Français">
+            Votre navigateur ne prend pas en charge les vidéos HTML5.
+        </video>
+    </section>
+
+    <!-- Formulaire de contact -->
+    <section id="contact">
+        <h2>Contactez-nous</h2>
+        <form action="submit_contact.php" method="POST">
+            <label for="nom">Nom:</label>
+            <input type="text" id="nom" name="nom" required aria-required="true">
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required aria-required="true">
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required aria-required="true"></textarea>
+
+            <button type="submit">Envoyer</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 SmartWatch Inc. Tous droits réservés.</p>
+    </footer>
+
+</body>
+</html>

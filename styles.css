@@ -1,0 +1,179 @@
+/* Définir une palette de couleurs et une police de base */
+:root {
+    --primary-color: #0d6efd;
+    --secondary-color: #f8f9fa;
+    --dark-color: #333;
+    --light-color: #f4f4f4;
+    --accent-color: #28a745;
+    --hover-color: #0056b3;
+    --border-color: #ddd;
+    --button-hover-color: #0069d9;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--secondary-color);
+    color: var(--dark-color);
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: var(--accent-color);
+}
+
+/* Section produit */
+section {
+    margin: 40px 10%;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    color: var(--primary-color);
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+section p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    line-height: 1.8;
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 600px;
+    border-radius: 10px;
+}
+
+/* Vidéo */
+video {
+    display: block;
+    margin: 20px auto;
+    width: 100%;
+    max-width: 800px;
+    border-radius: 10px;
+}
+
+/* Formulaire de contact */
+form {
+    display: grid;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+label {
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+input, textarea, button {
+    padding: 15px;
+    font-size: 1rem;
+    width: 100%;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+input, textarea {
+    background-color: var(--light-color);
+}
+
+textarea {
+    min-height: 150px;
+    resize: vertical;
+}
+
+button {
+    background-color: var(--primary-color);
+    color: white;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border: none;
+}
+
+button:hover {
+    background-color: var(--button-hover-color);
+}
+
+/* Footer */
+footer {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+footer p {
+    margin: 0;
+    font-size: 1rem;
+}
+
+/* Responsivité */
+@media (max-width: 768px) {
+    section {
+        margin: 20px;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    nav ul li {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    nav ul li a {
+        font-size: 1.1rem;
+    }
+
+    video {
+        max-width: 100%;
+    }
+
+    .form-container {
+        margin: 20px;
+    }
+}
