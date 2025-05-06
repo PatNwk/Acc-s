@@ -115,7 +115,7 @@ label {
     font-weight: 600;
 }
 
-input, textarea, button {
+input, textarea, button, select {
     padding: 16px;
     font-size: 1rem;
     width: 100%;
@@ -125,7 +125,7 @@ input, textarea, button {
     transition: all 0.3s ease;
 }
 
-input, textarea {
+input, textarea, select {
     background-color: var(--light-color);
 }
 
@@ -166,6 +166,7 @@ fieldset {
     border-radius: 10px;
     padding: 20px;
     background-color: #fff;
+    margin-bottom: 20px;
 }
 
 legend {
@@ -176,38 +177,54 @@ legend {
 }
 
 select {
-    padding: 16px;
-    font-size: 1rem;
-    border: 1px solid var(--border-color);
-    border-radius: 8px;
+    appearance: none;
     background-color: var(--light-color);
 }
 
-
+/* Responsive design */
 @media (max-width: 768px) {
+    body {
+        font-size: 15px;
+    }
+
     header h1 {
         font-size: 2rem;
     }
 
     section {
-        margin: 20px;
-        padding: 35px;
+        margin: 20px 5%;
+        padding: 30px 20px;
     }
 
     nav ul {
         text-align: center;
+        padding-left: 0;
     }
 
     nav ul li {
         display: block;
-        margin-bottom: 10px;
+        margin-bottom: 15px;
     }
 
     form {
         gap: 15px;
     }
 
-    video {
-        max-width: 100%;
+    input, textarea, select, button {
+        font-size: 0.95rem;
+        padding: 14px;
+    }
+
+    fieldset {
+        padding: 15px;
+    }
+
+    legend {
+        font-size: 1rem;
+    }
+
+    video, img {
+        width: 100%;
+        height: auto;
     }
 }
