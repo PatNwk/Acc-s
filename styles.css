@@ -1,12 +1,11 @@
-/* Palette de couleurs et base de typographie */
 :root {
-    --primary-color: #4a90e2; /* Bleu vif */
-    --secondary-color: #f4f7fa; /* Gris très clair */
+    --primary-color: #4a90e2;
+    --secondary-color: #f4f7fa;
     --dark-color: #333;
-    --light-color: #ffffff; /* Blanc pur */
-    --accent-color: #ff6f61; /* Rouge/orange vif */
-    --hover-color: #365d8f; /* Bleu foncé */
-    --button-hover-color: #ff3e30; /* Rouge vif */
+    --light-color: #ffffff;
+    --accent-color: #ff6f61;
+    --hover-color: #365d8f;
+    --button-hover-color: #ff3e30;
     --border-color: #dfe3e8;
     --shadow-color: rgba(0, 0, 0, 0.1);
 }
@@ -22,21 +21,18 @@ body {
     box-sizing: border-box;
 }
 
-/* Header */
 header {
     background-color: var(--primary-color);
     color: var(--light-color);
     padding: 40px 10%;
     text-align: center;
     box-shadow: 0 6px 30px var(--shadow-color);
-    position: relative;
 }
 
 header h1 {
     font-size: 3rem;
     margin: 0;
     font-weight: 700;
-    letter-spacing: 1px;
     text-transform: uppercase;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
 }
@@ -65,7 +61,6 @@ nav ul li a:hover {
     transform: translateY(-5px);
 }
 
-/* Section produit */
 section {
     padding: 50px 12%;
     margin: 50px 0;
@@ -88,9 +83,7 @@ section h2 {
 
 section p {
     font-size: 1.1rem;
-    line-height: 1.8;
     margin-bottom: 25px;
-    color: var(--dark-color);
 }
 
 img {
@@ -102,7 +95,6 @@ img {
     margin: 0 auto;
 }
 
-/* Vidéo */
 video {
     display: block;
     margin: 20px auto;
@@ -112,7 +104,6 @@ video {
     box-shadow: 0 6px 20px var(--shadow-color);
 }
 
-/* Formulaire de contact */
 form {
     display: grid;
     gap: 20px;
@@ -122,7 +113,6 @@ form {
 label {
     font-size: 1.1rem;
     font-weight: 600;
-    margin-bottom: 8px;
 }
 
 input, textarea, button {
@@ -147,10 +137,9 @@ textarea {
 button {
     background-color: var(--primary-color);
     color: var(--light-color);
-    font-size: 1.1rem;
     font-weight: 600;
-    cursor: pointer;
     border: none;
+    cursor: pointer;
     transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
@@ -159,7 +148,6 @@ button:hover {
     transform: translateY(-2px);
 }
 
-/* Footer */
 footer {
     background-color: var(--primary-color);
     color: var(--light-color);
@@ -171,10 +159,8 @@ footer {
 footer p {
     margin: 0;
     font-size: 1.1rem;
-    font-weight: 400;
 }
 
-/* Responsivité */
 @media (max-width: 768px) {
     header h1 {
         font-size: 2rem;
@@ -187,7 +173,6 @@ footer p {
 
     nav ul {
         text-align: center;
-        margin-top: 20px;
     }
 
     nav ul li {
@@ -195,11 +180,11 @@ footer p {
         margin-bottom: 10px;
     }
 
-    video {
-        max-width: 100%;
-    }
-
     form {
         gap: 15px;
+    }
+
+    video {
+        max-width: 100%;
     }
 }
