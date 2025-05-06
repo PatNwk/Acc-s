@@ -46,40 +46,54 @@
     </section>
 
     <!-- Formulaire de contact -->
-<section id="contact">
-    <h2>Contactez-nous</h2>
-    <form action="submit_contact.php" method="POST">
-        <fieldset>
-            <legend>Informations personnelles</legend>
+    <section id="contact">
+        <h2>Contactez-nous</h2>
+        <form action="submit_contact.php" method="POST">
+            <fieldset>
+                <legend>Formulaire de contact</legend>
 
-            <label for="nom">Nom <span aria-hidden="true">*</span> :</label>
-            <input type="text" id="nom" name="nom" required aria-required="true">
+                <!-- Identité -->
+                <fieldset>
+                    <legend>Identité</legend>
 
-            <label for="prenom">Prénom <span aria-hidden="true">*</span> :</label>
-            <input type="text" id="prenom" name="prenom" required aria-required="true">
+                    <label for="nom">Nom <span aria-hidden="true">*</span> :</label>
+                    <input type="text" id="nom" name="nom" required aria-required="true">
 
-            <label for="email">Email <span aria-hidden="true">*</span> :</label>
-            <input type="email" id="email" name="email" required aria-required="true">
+                    <label for="prenom">Prénom <span aria-hidden="true">*</span> :</label>
+                    <input type="text" id="prenom" name="prenom" required aria-required="true">
+                </fieldset>
 
-            <label for="telephone">Numéro de téléphone :</label>
-            <input type="tel" id="telephone" name="telephone" placeholder="Ex : 06 12 34 56 78">
+                <!-- Coordonnées -->
+                <fieldset>
+                    <legend>Coordonnées</legend>
 
-            <label for="horaire">Plage horaire souhaitée pour vous contacter :</label>
-            <select id="horaire" name="horaire">
-                <option value="">-- Veuillez choisir --</option>
-                <option value="matin">Matin (8h-12h)</option>
-                <option value="apres-midi">Après-midi (13h-17h)</option>
-                <option value="soiree">Soirée (17h-20h)</option>
-            </select>
+                    <label for="email">Email <span aria-hidden="true">*</span> :</label>
+                    <input type="email" id="email" name="email" required aria-required="true">
 
-            <label for="message">Message :</label>
-            <textarea id="message" name="message" required aria-required="true"></textarea>
+                    <label for="telephone">Numéro de téléphone :</label>
+                    <input type="tel" id="telephone" name="telephone" placeholder="Ex : 06 12 34 56 78">
 
-            <button type="submit">Envoyer</button>
-        </fieldset>
-    </form>
-</section>
+                    <label for="horaire">Plage horaire de contact :</label>
+                    <select id="horaire" name="horaire">
+                        <option value="">-- Choisir une plage horaire --</option>
+                        <option value="matin">Matin (8h-12h)</option>
+                        <option value="apres-midi">Après-midi (13h-17h)</option>
+                        <option value="soiree">Soirée (17h-20h)</option>
+                    </select>
+                </fieldset>
 
+                <!-- Message -->
+                <fieldset>
+                    <legend>Votre message</legend>
+
+                    <label for="message">Message <span aria-hidden="true">*</span> :</label>
+                    <textarea id="message" name="message" required aria-required="true" placeholder="Votre message ici..."></textarea>
+                </fieldset>
+
+                <button type="submit">Envoyer</button>
+            </fieldset>
+        </form>
+    </section>
 
     <!-- Section Définitions -->
     <section id="definitions">
