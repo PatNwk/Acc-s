@@ -17,6 +17,7 @@
                 <li><a href="#produit">Le produit</a></li>
                 <li><a href="#video">Vidéo</a></li>
                 <li><a href="#contact">Contact</a></li>
+                <li><a href="#menu">Menu</a></li>
                 <li><a href="#definitions">Définitions</a></li>
             </ul>
         </nav>
@@ -52,27 +53,20 @@
             <fieldset>
                 <legend>Formulaire de contact</legend>
 
-                <!-- Identité -->
                 <fieldset>
                     <legend>Identité</legend>
-
                     <label for="nom">Nom <span aria-hidden="true">*</span> :</label>
                     <input type="text" id="nom" name="nom" required aria-required="true">
-
                     <label for="prenom">Prénom <span aria-hidden="true">*</span> :</label>
                     <input type="text" id="prenom" name="prenom" required aria-required="true">
                 </fieldset>
 
-                <!-- Coordonnées -->
                 <fieldset>
                     <legend>Coordonnées</legend>
-
                     <label for="email">Email <span aria-hidden="true">*</span> :</label>
                     <input type="email" id="email" name="email" required aria-required="true">
-
                     <label for="telephone">Numéro de téléphone :</label>
                     <input type="tel" id="telephone" name="telephone" placeholder="Ex : 06 12 34 56 78">
-
                     <label for="horaire">Plage horaire de contact :</label>
                     <select id="horaire" name="horaire">
                         <option value="">-- Choisir une plage horaire --</option>
@@ -82,10 +76,8 @@
                     </select>
                 </fieldset>
 
-                <!-- Message -->
                 <fieldset>
                     <legend>Votre message</legend>
-
                     <label for="message">Message <span aria-hidden="true">*</span> :</label>
                     <textarea id="message" name="message" required aria-required="true" placeholder="Votre message ici..."></textarea>
                 </fieldset>
@@ -93,6 +85,31 @@
                 <button type="submit">Envoyer</button>
             </fieldset>
         </form>
+    </section>
+
+    <!-- Section menu -->
+    <section id="menu">
+        <h2>Notre Menu</h2>
+        <div class="menu-container">
+            <div class="menu-item">
+                <img src="montre.webp" alt="SmartWatch Classique">
+                <h3>SmartWatch Classique</h3>
+                <p class="price">249 €</p>
+                <p class="description">Un modèle fiable et élégant pour le quotidien.</p>
+            </div>
+            <div class="menu-item">
+                <img src="montre.webp" alt="SmartWatch Sport">
+                <h3>SmartWatch Sport</h3>
+                <p class="price">299 €</p>
+                <p class="description">Parfaite pour les activités physiques, résistante à l’eau.</p>
+            </div>
+            <div class="menu-item">
+                <img src="montre.webp" alt="SmartWatch Luxe">
+                <h3>SmartWatch Luxe</h3>
+                <p class="price">449 €</p>
+                <p class="description">Un design haut de gamme avec finition en métal.</p>
+            </div>
+        </div>
     </section>
 
     <!-- Section Définitions -->

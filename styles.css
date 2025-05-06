@@ -125,10 +125,6 @@ input, textarea, button, select {
     transition: all 0.3s ease;
 }
 
-input, textarea, select {
-    background-color: var(--light-color);
-}
-
 textarea {
     min-height: 160px;
     resize: vertical;
@@ -156,11 +152,6 @@ footer {
     margin-top: 60px;
 }
 
-footer p {
-    margin: 0;
-    font-size: 1.1rem;
-}
-
 fieldset {
     border: 2px solid var(--border-color);
     border-radius: 10px;
@@ -176,24 +167,67 @@ legend {
     margin-bottom: 10px;
 }
 
-select {
-    appearance: none;
-    background-color: var(--light-color);
+/* Section Menu */
+#menu {
+    padding: 50px 10%;
+    background-color: var(--secondary-color);
+    text-align: center;
 }
 
-/* Responsive design */
-@media (max-width: 768px) {
-    body {
-        font-size: 15px;
-    }
+.menu-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    flex-wrap: wrap;
+}
 
+.menu-item {
+    flex: 1;
+    min-width: 250px;
+    background-color: var(--light-color);
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 6px 20px var(--shadow-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.menu-item:hover {
+    transform: translateY(-5px);
+}
+
+.menu-item img {
+    width: 100%;
+    max-width: 200px;
+    border-radius: 12px;
+    margin-bottom: 15px;
+}
+
+.menu-item h3 {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+.menu-item .price {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--accent-color);
+    margin-bottom: 10px;
+}
+
+.menu-item .description {
+    font-size: 1rem;
+    color: var(--dark-color);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
     header h1 {
         font-size: 2rem;
-    }
-
-    section {
-        margin: 20px 5%;
-        padding: 30px 20px;
     }
 
     nav ul {
@@ -206,13 +240,17 @@ select {
         margin-bottom: 15px;
     }
 
-    form {
-        gap: 15px;
+    section {
+        margin: 20px 5%;
+        padding: 30px 20px;
     }
 
-    input, textarea, select, button {
-        font-size: 0.95rem;
-        padding: 14px;
+    .menu-container {
+        flex-direction: column;
+    }
+
+    form {
+        gap: 15px;
     }
 
     fieldset {
@@ -221,6 +259,11 @@ select {
 
     legend {
         font-size: 1rem;
+    }
+
+    input, textarea, select, button {
+        font-size: 0.95rem;
+        padding: 14px;
     }
 
     video, img {
