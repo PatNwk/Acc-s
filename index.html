@@ -27,59 +27,82 @@
     <section class="banner">
         <h2>Bienvenue sur SmartWatch 2025</h2>
         <p>Découvrez la montre connectée du futur avec des fonctionnalités avancées et un design élégant.</p>
-        <a href="produit.html" class="btn">Voir les produits</a>
+        <a href="produit.html" class="btn" aria-label="Voir les produits">Voir les produits</a>
     </section>
 
     <!-- Section Caractéristiques -->
-    <section class="features">
-        <h2>Caractéristiques principales</h2>
-        <div class="feature">
+    <section class="features" aria-labelledby="features-heading">
+        <h2 id="features-heading">Caractéristiques principales</h2>
+        <div class="feature" aria-live="polite">
             <h3>Design moderne</h3>
             <p>Un design épuré et élégant qui s'adapte à tous les styles.</p>
         </div>
-        <div class="feature">
+        <div class="feature" aria-live="polite">
             <h3>Technologie avancée</h3>
             <p>Des capteurs de pointe pour un suivi précis de votre santé et de vos activités.</p>
         </div>
-        <div class="feature">
+        <div class="feature" aria-live="polite">
             <h3>Autonomie exceptionnelle</h3>
             <p>Jusqu'à 10 jours d'autonomie pour une utilisation prolongée sans recharge.</p>
         </div>
     </section>
 
+    <!-- Section Présentation -->
+<section aria-labelledby="presentation-heading">
+    <h2 id="presentation-heading">Bienvenue dans l'univers SmartWatch 2025</h2>
+    <p>
+        La <strong>SmartWatch 2025</strong> est bien plus qu'une simple montre connectée. Avec ses 
+        <strong>capteurs avancés</strong> (<abbr title="Capteurs Avancés">CA</abbr>), elle permet de suivre vos données biométriques telles que la <abbr title="Fréquence Cardiaque">FC</abbr> et le niveau d’oxygène dans le sang (<abbr title="Saturation en Oxygène">SpO₂</abbr>), pour une gestion optimale de votre santé.
+    </p>
+    <p>
+        Son <strong>interface utilisateur</strong> (<abbr title="Interface Utilisateur">UI</abbr>) intuitive a été pensée pour une navigation fluide et accessible, même pour les nouveaux utilisateurs. Que vous soyez sportif, professionnel ou simplement amateur de <abbr title="Nouvelles Technologies">NT</abbr>, l'UI s'adapte à vos besoins.
+    </p>
+    <p>
+        Enfin, profitez de son incroyable <strong>autonomie</strong> (<abbr title="Autonomie">AUT</abbr>) qui peut atteindre jusqu'à 10 jours d’utilisation sans recharge. Vous pourrez ainsi rester connecté plus longtemps, sans contrainte, grâce à une gestion optimisée de la <abbr title="Batterie">BAT</abbr>.
+    </p>
+    <p>
+        Découvrez dès maintenant la <strong>SmartWatch 2025</strong> et laissez-vous séduire par ses fonctionnalités avancées, son design moderne et son <abbr title="Expérience Utilisateur">EU</abbr> optimisée !
+    </p>
+</section>
+
+
+
     <!-- Section Témoignages -->
-    <section class="testimonials">
-        <h2>Ce que disent nos clients</h2>
-        <blockquote>
+    <section class="testimonials" aria-labelledby="testimonials-heading">
+        <h2 id="testimonials-heading">Ce que disent nos clients</h2>
+        <blockquote aria-live="polite">
             <p>"La SmartWatch 2025 a changé ma vie. Je ne peux plus m'en passer !"</p>
             <cite>- Marie Dupont</cite>
         </blockquote>
-        <blockquote>
+        <blockquote aria-live="polite">
             <p>"Une montre connectée qui allie style et performance. Je recommande à 100%."</p>
             <cite>- Jean Martin</cite>
         </blockquote>
     </section>
 
-    <!-- Section Définitions -->
-    <section id="definitions">
-        <h2>Définitions</h2>
-        <dl>
-            <dt id="def-capteurs">Capteurs avancés</dt>
-            <dd>Dispositifs intégrés permettant de mesurer des données biométriques comme la fréquence cardiaque, le niveau d’oxygène dans le sang, etc.</dd>
-
-            <dt id="def-interface">Interface intuitive</dt>
-            <dd>Interface utilisateur conçue pour être facile à comprendre et à utiliser sans manuel d’instructions.</dd>
-
-            <dt id="def-autonomie">Autonomie</dt>
-            <dd>Durée pendant laquelle la montre peut fonctionner sans être rechargée, en usage normal ou intensif.</dd>
-        </dl>
+    <!-- Section Vidéo avec sous-titres -->
+    <section aria-labelledby="video-heading">
+        <h2 id="video-heading">Découvrez la SmartWatch 2025 en action</h2>
+        <video controls>
+            <source src="Vidéo_MPEG-4.mp4" type="video/mp4">
+            <track src="sous-titre.vtt" kind="subtitles" srclang="fr" label="Français">
+            Votre navigateur ne prend pas en charge la vidéo HTML5.
+        </video>
     </section>
 
-    <!-- Section Appel à l'action -->
-    <section class="cta">
-        <h2>Prêt à découvrir la SmartWatch 2025 ?</h2>
-        <p>Commandez dès maintenant et profitez d'une expérience unique.</p>
-        <a href="produit.html" class="btn">Commander maintenant</a>
+    <!-- Section Définitions -->
+    <section id="definitions" aria-labelledby="definitions-heading">
+        <h2 id="definitions-heading">Définitions</h2>
+        <dl>
+            <dt id="def-capteurs">Capteurs avancés (CA)</dt>
+            <dd>Dispositifs intégrés permettant de mesurer des données biométriques comme la fréquence cardiaque, le niveau d’oxygène dans le sang, etc.</dd>
+
+            <dt id="def-interface">Interface utilisateur (UI)</dt>
+            <dd>Interface intuitive conçue pour être facile à comprendre et à utiliser sans manuel d’instructions.</dd>
+
+            <dt id="def-autonomie">Autonomie (AUT)</dt>
+            <dd>Durée pendant laquelle la montre peut fonctionner sans être rechargée, en usage normal ou intensif.</dd>
+        </dl>
     </section>
 
     <!-- Footer -->

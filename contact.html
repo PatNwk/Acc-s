@@ -7,70 +7,73 @@
     <title>Contact - SmartWatch 2025</title>
     <link rel="stylesheet" href="styles.css">
     <script src="script.js"></script>
-
 </head>
 <body>
 
-    <!-- Header -->
-    <header>
-        <h1>SmartWatch 2025 - La montre connectée du futur</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Accueil</a></li>
-                <li><a href="produit.html">Produit</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="about.html">À propos</a></li>
-                <li><a href="#definitions">Définitions</a></li>
-            </ul>
-        </nav>
-    </header>
+<!-- Header -->
+<header>
+    <h1>SmartWatch 2025 - La montre connectée du futur</h1>
+    <nav>
+        <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="produit.html">Produit</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="about.html">À propos</a></li>
+            <li><a href="#definitions">Définitions</a></li>
+        </ul>
+    </nav>
+</header>
 
-    <!-- Formulaire de contact -->
-    <section id="contact">
-        <h2>Formulaire de contact</h2>
-        <form action="submit_contact.php" method="POST" onsubmit="return confirmSubmission(event)">
-            <fieldset>
-                <legend>Identité</legend>
-                <label for="nom">Nom :</label>
-                <input type="text" id="nom" name="nom" placeholder="Entrez votre nom" required aria-required="true">
-                <label for="prenom">Prénom :</label>
-                <input type="text" id="prenom" name="prenom" placeholder="Entrez votre prénom" required aria-required="true">
-            </fieldset>
-            <fieldset>
-                <legend>Coordonnées</legend>
-                <label for="email">Email :</label>
-                <input type="email" id="email" name="email" placeholder="exemple@domaine.com" required aria-required="true">
-                <label for="telephone">Téléphone :</label>
-                <input type="tel" id="telephone" name="telephone" placeholder="0612345678">
-            </fieldset>
-            <fieldset>
-                <legend>Message</legend>
-                <label for="message">Votre message :</label>
-                <textarea id="message" name="message" placeholder="Saisissez votre message ici" required aria-required="true"></textarea>
-            </fieldset>
-            <fieldset>
-                <legend>Plage horaire de contact</legend>
-                <label for="horaire">Sélectionnez une plage horaire :</label>
-                <select id="horaire" name="horaire">
-                    <option value="">--Choisissez une plage horaire--</option>
-                    <option value="matin">Matin (8h-12h)</option>
-                    <option value="apres-midi">Après-midi (12h-18h)</option>
-                    <option value="soir">Soir (18h-22h)</option>
-                </select>
-            </fieldset>
-            <button type="submit">Envoyer</button>
-        </form>
-    </section>
+<!-- Formulaire de contact -->
+<section id="contact">
+    <h2>Formulaire de contact</h2>
+    <form action="submit_contact.php" method="POST" onsubmit="return confirmSubmission(event)">
+        <fieldset>
+            <legend>Identité</legend>
+            <label for="nom">Nom :</label>
+            <input type="text" id="nom" name="nom" placeholder="Entrez votre nom" required aria-required="true">
+            <label for="prenom">Prénom :</label>
+            <input type="text" id="prenom" name="prenom" placeholder="Entrez votre prénom" required aria-required="true">
+        </fieldset>
+        <fieldset>
+            <legend>Coordonnées</legend>
+            <label for="email">Email :</label>
+            <input type="email" id="email" name="email" placeholder="exemple@domaine.com" required aria-required="true">
+            <label for="telephone">Téléphone :</label>
+            <input type="tel" id="telephone" name="telephone" placeholder="0612345678" required aria-required="true">
+        </fieldset>
+        <fieldset>
+            <legend>Message</legend>
+            <label for="message">Votre message :</label>
+            <textarea id="message" name="message" placeholder="Saisissez votre message ici" required aria-required="true"></textarea>
+        </fieldset>
+        <fieldset>
+            <legend>Plage horaire de contact</legend>
+            <label for="horaire">Sélectionnez une plage horaire :</label>
+            <select id="horaire" name="horaire">
+                <option value="">--Choisissez une plage horaire--</option>
+                <option value="matin">Matin (8h-12h)</option>
+                <option value="apres-midi">Après-midi (12h-18h)</option>
+                <option value="soir">Soir (18h-22h)</option>
+            </select>
+        </fieldset>
+        <button type="submit">Envoyer</button>
+    </form>
+</section>
 
-    <!-- Overlay & Popup de confirmation -->
-    <div id="confirmationOverlay"></div>
-    <div id="confirmationPopup" role="dialog" aria-labelledby="popupTitle" aria-hidden="true" tabindex="-1">
-        <div class="popup-header">Confirmation d'envoi</div>
-        <p>Voulez-vous vraiment envoyer ce formulaire ?</p>
-        <div class="popup-actions">
-            <button id="confirmYes">Oui</button>
-            <button id="confirmNo">Non</button>
-        </div>
+<!-- Feedback visuel -->
+<div id="feedbackMessage" aria-live="polite" aria-atomic="true"></div>
+
+<!-- Overlay & Popup de confirmation -->
+<div id="confirmationOverlay" class="overlay" aria-hidden="true"></div>
+<div id="confirmationPopup" role="dialog" aria-labelledby="popupTitle" aria-hidden="true" tabindex="-1">
+    <div class="popup-header" id="popupTitle">Confirmation d'envoi</div>
+    <p>Voulez-vous vraiment envoyer ce formulaire ?</p>
+    <div class="popup-actions">
+        <button id="confirmYes">Oui</button>
+        <button id="confirmNo">Non</button>
     </div>
+</div>
+
 </body>
 </html>
