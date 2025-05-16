@@ -11,12 +11,13 @@
 
     <!-- Header -->
     <header>
-        <h1>SmartWatch 2025 - Contactez-nous</h1>
+        <h1>SmartWatch 2025 - La montre connectée du futur</h1>
         <nav>
             <ul>
                 <li><a href="index.html">Accueil</a></li>
                 <li><a href="produit.html">Produit</a></li>
                 <li><a href="contact.html">Contact</a></li>
+                <li><a href="about.html">À propos</a></li>
                 <li><a href="#definitions">Définitions</a></li>
             </ul>
         </nav>
@@ -29,22 +30,38 @@
             <fieldset>
                 <legend>Identité</legend>
                 <label for="nom">Nom :</label>
-                <input type="text" id="nom" name="nom" required>
+                <input type="text" id="nom" name="nom" placeholder="Entrez votre nom" required aria-required="true">
+
                 <label for="prenom">Prénom :</label>
-                <input type="text" id="prenom" name="prenom" required>
+                <input type="text" id="prenom" name="prenom" placeholder="Entrez votre prénom" required aria-required="true">
             </fieldset>
+            
             <fieldset>
                 <legend>Coordonnées</legend>
                 <label for="email">Email :</label>
-                <input type="email" id="email" name="email" required>
+                <input type="email" id="email" name="email" placeholder="exemple@domaine.com" required aria-required="true">
+
                 <label for="telephone">Téléphone :</label>
-                <input type="tel" id="telephone" name="telephone">
+                <input type="tel" id="telephone" name="telephone" placeholder="0612345678">
             </fieldset>
+
             <fieldset>
                 <legend>Message</legend>
                 <label for="message">Votre message :</label>
-                <textarea id="message" name="message" required></textarea>
+                <textarea id="message" name="message" placeholder="Saisissez votre message ici" required aria-required="true"></textarea>
             </fieldset>
+
+            <fieldset>
+                <legend>Plage horaire de contact</legend>
+                <label for="horaire">Sélectionnez une plage horaire :</label>
+                <select id="horaire" name="horaire">
+                    <option value="">--Choisissez une plage horaire--</option>
+                    <option value="matin">Matin (8h-12h)</option>
+                    <option value="apres-midi">Après-midi (12h-18h)</option>
+                    <option value="soir">Soir (18h-22h)</option>
+                </select>
+            </fieldset>
+
             <button type="submit">Envoyer</button>
         </form>
     </section>
