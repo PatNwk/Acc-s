@@ -1,14 +1,15 @@
 :root {
-    --primary-color: #4a90e2;
-    --secondary-color: #d1d5db;
-    --dark-color: #333;
-    --light-color: #f4f4f4;
-    --accent-color: #e53935;
-    --hover-color: #365d8f;
-    --button-hover-color: #ff3e30;
-    --border-color: #c7ccd1;
+    --primary-color: #1e3a8a;         /* bleu foncé profond */
+    --secondary-color: #ffffff;       /* fond blanc clair et lisible */
+    --dark-color: #111827;            /* texte très foncé */
+    --light-color: #f9fafb;           /* très clair mais pas blanc */
+    --accent-color: #b91c1c;          /* rouge foncé pour les erreurs */
+    --hover-color: #1e40af;           /* bleu hover plus contrasté */
+    --button-hover-color: #dc2626;    /* rouge plus intense */
+    --border-color: #9ca3af;          /* gris plus foncé pour lisibilité */
     --shadow-color: rgba(0, 0, 0, 0.1);
 }
+
 
 body {
     font-family: 'Roboto', sans-serif;
