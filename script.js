@@ -9,9 +9,11 @@ function confirmSubmission(event) {
     const prenom = document.getElementById('prenom');
     const email = document.getElementById('email');
     const telephone = document.getElementById('telephone');
+    const message = document.getElementById('message');
 
     const namePattern = /^[A-Za-zÀ-ÖØ-öø-ÿ\s'-]+$/;
-    const phonePattern = /^(0[67]\d{8}|(\+33|0033)[67]\d{8})$/;
+    const emailPattern = /^[\w.-]+@[\w.-]+\.[a-zA-Z]{2,}$/;
+    const phonePattern = /^0[1-9][0-9]{8}$/;
 
     feedbackMessage.textContent = "";
     feedbackMessage.className = "";
@@ -28,13 +30,18 @@ function confirmSubmission(event) {
         isValid = false;
     }
 
-    if (!email.validity.valid) {
+    if (!emailPattern.test(email.value)) {
         feedbackMessage.textContent += "Erreur : L'email est invalide. ";
         isValid = false;
     }
 
-    if (telephone.value && !phonePattern.test(telephone.value)) {
+    if (!phonePattern.test(telephone.value)) {
         feedbackMessage.textContent += "Erreur : Le numéro de téléphone est invalide. ";
+        isValid = false;
+    }
+
+    if (message.value.trim() === "") {
+        feedbackMessage.textContent += "Erreur : Le message ne peut pas être vide. ";
         isValid = false;
     }
 
