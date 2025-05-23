@@ -1,17 +1,16 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Contact" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Contact - SmartWatch 2025</title>
-    <link rel="stylesheet" href="CSS/styles.css">
-    <script src="JS/script.js"></script>
+    <link rel="stylesheet" href="CSS/styles.css" />
+    <script href="JS/script.js"></script>
 </head>
 <body>
 
-<!-- Header -->
 <header>
     <h1>SmartWatch 2025 - La montre connectée du futur</h1>
     <nav>
@@ -20,33 +19,32 @@
             <li><a href="produit.html">Produit</a></li>
             <li><a href="contact.html">Contact</a></li>
             <li><a href="about.html">À propos</a></li>
-            <li><a href="#definitions">Définitions</a></li>
+            <li><a href="definitions.html">Définitions</a></li>
         </ul>
     </nav>
 </header>
 
-<!-- Formulaire de contact -->
 <section id="contact">
     <h2>Formulaire de contact</h2>
-    <form action="submit_contact.php" method="POST" onsubmit="return confirmSubmission(event)">
+    <form action="https://formspree.io/f/xovdzrkn" method="POST" onsubmit="confirmSubmission(event)">
         <fieldset>
             <legend>Identité</legend>
             <label for="nom">Nom :</label>
-            <input type="text" id="nom" name="nom" placeholder="Entrez votre nom" required aria-required="true">
+            <input type="text" id="nom" name="nom" placeholder="Entrez votre nom" required />
             <label for="prenom">Prénom :</label>
-            <input type="text" id="prenom" name="prenom" placeholder="Entrez votre prénom" required aria-required="true">
+            <input type="text" id="prenom" name="prenom" placeholder="Entrez votre prénom" required />
         </fieldset>
         <fieldset>
             <legend>Coordonnées</legend>
             <label for="email">Email :</label>
-            <input type="email" id="email" name="email" placeholder="exemple@domaine.com" required aria-required="true">
+            <input type="email" id="email" name="email" placeholder="exemple@domaine.com" required />
             <label for="telephone">Téléphone :</label>
-            <input type="tel" id="telephone" name="telephone" placeholder="0612345678" required aria-required="true">
+            <input type="tel" id="telephone" name="telephone" placeholder="0612345678" required />
         </fieldset>
         <fieldset>
             <legend>Message</legend>
             <label for="message">Votre message :</label>
-            <textarea id="message" name="message" placeholder="Saisissez votre message ici" required aria-required="true"></textarea>
+            <textarea id="message" name="message" placeholder="Saisissez votre message ici" required></textarea>
         </fieldset>
         <fieldset>
             <legend>Plage horaire de contact</legend>
@@ -60,16 +58,13 @@
         </fieldset>
         <button type="submit">Envoyer</button>
     </form>
-    <!-- Feedback visuel -->
-<div id="feedbackMessage" aria-live="polite" aria-atomic="true"></div>
+    <div id="feedbackMessage" aria-live="polite"></div>
 </section>
 
-
-
-<!-- Overlay & Popup de confirmation -->
+<!-- Overlay & Popup -->
 <div id="confirmationOverlay" class="overlay" aria-hidden="true"></div>
-<div id="confirmationPopup" role="dialog" aria-labelledby="popupTitle" aria-hidden="true" tabindex="-1">
-    <div class="popup-header" id="popupTitle">Confirmation d'envoi</div>
+<div id="confirmationPopup" class="popup" role="dialog" aria-labelledby="popupTitle" aria-hidden="true" tabindex="-1">
+    <div class="popup-header" id="popupTitle"><strong>Confirmation d'envoi</strong></div>
     <p>Voulez-vous vraiment envoyer ce formulaire ?</p>
     <div class="popup-actions">
         <button id="confirmYes">Oui</button>
@@ -77,5 +72,8 @@
     </div>
 </div>
 
+<footer>
+    <p>&copy; 2025 SmartWatch Inc. Tous droits réservés.</p>
+</footer>
 </body>
 </html>
