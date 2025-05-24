@@ -141,6 +141,20 @@ nav ul li a:hover {
     color: var(--accent-color);
 }
 
+nav > a[href="#definitions"] {
+    color: var(--light-color);
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+    padding: 0.3rem 0.7rem;
+    border-radius: 4px;
+}
+
+nav > a[href="#definitions"]:hover {
+    color: var(--accent-color);
+    background: rgba(255,255,255,0.15);
+}
+
 section {
     padding: 50px 12%;
     margin: 50px 0;
